@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+   background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+   url('bg.jpg') no-repeat center center fixed;
+  background-blend-mode: overlay;
+  background-size: 300px, 800px, cover;
+  background-position: center center, center center, center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.player {
+  background: linear-gradient(145deg, #ffd2d2, #f8c4c4);
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.player img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  background: white;
+  border: none;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#play-pause {
+  background: #f64f9e;
+  color: white;
+}
+
+.progress-container, .volume-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.progress-container input, .volume-container input {
+  flex: 1;
+  margin-left: 10px;
+}
+
+audio {
+  display: none;
+}
